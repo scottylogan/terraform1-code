@@ -40,35 +40,35 @@ You'll need to install some tools before starting this tutorial:
 
 1. Install curl, git, groff, jq, pip3 (Python3), and unzip
    * APT based
-   ```bash
-   % sudo apt-get update
-   % sudo apt-get install curl git groff jq python3-pip unzip
-   ```
+     ```bash
+     % sudo apt-get update
+     % sudo apt-get install curl git groff jq python3-pip unzip
+     ```
 
    * YUM based
-   ```bash
-   % sudo yum update
-   % sudo yum install curl git groff-base jq python3-pip unzip
-   ```
+     ```bash
+     % sudo yum update
+     % sudo yum install curl git groff-base jq python3-pip unzip
+     ```
 
    * Alpine
-   ```bash
-   % sudo apk update
-   % sudo apk add curl git groff jq python3 unzip
-   ```
+     ```bash
+     % sudo apk update
+     % sudo apk add curl git groff jq python3 unzip
+     ```
 
 2. Install the AWS CLI
-   ```bash
-   % sudo pip3 install awscli
-   ```
+     ```bash
+     % sudo pip3 install awscli
+     ```
 3. Install Terraform
    * Find the latest version of [Terraform](https://www.terraform.io/downloads.html) (You most likely wil  want the Linux 64-bit download)
-   ```bash
-   % cd /usr/local/bin
-   % curl -so /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
-   % sudo unzip /tmp/terraform.zip
-   % rm /tmp/terraform.zip
-   ```
+     ```bash
+     % cd /usr/local/bin
+     % curl -so /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
+     % sudo unzip /tmp/terraform.zip
+     % rm /tmp/terraform.zip
+     ```
 
 ### Windows Setup
 
@@ -79,8 +79,6 @@ I rarely use Windows, but here are some starting points
 * [Terraform](https://www.terraform.io/downloads.html)
 * [jq](https://stedolan.github.io/jq/)
 
-<br/>
-
 
 # AWS Setup
 
@@ -89,8 +87,6 @@ You should create a Terraform [IAM User](https://docs.aws.amazon.com/IAM/latest/
 1. Create new IAM user (called `terraform`)
 2. Attach the _AdministratorAccess_ policy to the user
 3. Create and download credentials for the user
-
-<br/>
 
 [<img src="http://img.youtube.com/vi/vhEH8_Man3U/maxresdefault.jpg" alt="Watch the Video" width="50%" />](https://youtu.be/vhEH8_Man3U)
 
