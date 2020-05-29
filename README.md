@@ -188,3 +188,16 @@ aws_s3_bucket.tfstate: Creation complete after 4s [id=126147297478-tfstate]
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 ```
 
+Your directory should look like this:
+
+```bash
+% ls -AF
+.git/              .terraform/        provider.tf        setup.sh*
+.gitignore         README.md          remotestate.tf     terraform.tfstate
+```
+
+Your state is still being stored in `terraform.tfstate`... checkout the next step to migrate it to S3:
+
+```bash
+% git checkout 2_remotestate
+```
