@@ -61,14 +61,18 @@ You'll need to install some tools before starting this tutorial:
      ```bash
      % sudo pip3 install awscli
      ```
+
+
+
 3. Install Terraform
-   * Find the latest version of [Terraform](https://www.terraform.io/downloads.html) (You most likely wil  want the Linux 64-bit download)
-     ```bash
-     % cd /usr/local/bin
-     % curl -so /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
-     % sudo unzip /tmp/terraform.zip
-     % rm /tmp/terraform.zip
-     ```
+   ```bash
+   % cd /usr/local/bin
+   % curl -so /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
+   % sudo unzip /tmp/terraform.zip
+   % rm /tmp/terraform.zip
+   ```
+
+   * You can find the latest version of Terraform for 64 bit Linux at https://releases.hashicorp.com/terraform/
 
 ### Windows Setup
 
