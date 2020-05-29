@@ -41,4 +41,14 @@ locals {
   tf_bucket  = "${tf_bucket}"
   tf_state   = "${tf_state}"
 }
+
+# Remote State
+terraform {
+  backend "s3" {
+    bucket = "${tf_bucket}"
+    key    = "${tf_state}"
+    region = "${region}"
+    profile = "${profile}"
+  }
+}
 PROVIDER
