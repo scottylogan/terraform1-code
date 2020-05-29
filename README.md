@@ -30,66 +30,57 @@ You'll need to install some tools before starting this tutorial:
 ## Mac Setup
 
 * Install [Homebrew](https://brew.sh)
-* Use Homebrew to install Terraform, the AWS CLI, jq, and a newer version of git:
-  1. Update the package list
+* Use Homebrew to install Terraform, the AWS CLI, jq, and a newer version of git
 ```bash
 % brew update
-```
-  2. Install the packages
-```bash
 % brew install awscli git jq terraform
 ```
 
 ## Linux Setup
 
-1. Update your package lists
-  * APT-based (Debian, Ubuntu)
-```
-sudo apt-get update
-```
-  * YUM-based (RedHat, CentOS, Amazon)
-```
-sudo yum update
-```
-  * Alpine
-```
-sudo apk update
-```
-2. Install curl, git, groff, jq, pip3 (Python3), and libarchive or libarchive-tools (for unpacking ZIP files)
-  * APT based
-    * Ubuntu has an `awscli` package, but it's older than the one provided by `pip3`
-```bash
-% sudo apt-get install curl git groff jq libarchive-tools python3-pip
-```
-  * YUM based
-```bash
-% sudo yum install curl git groff-base jq libarchive python3-pip
-```
-  * Alpine
-```bash
-% sudo apk add curl git groff jq libarchive-tools python3
-```
-3. Install the AWS CLI
-```bash
-% sudo pip3 install awscli
-```
-4. Install Terraform
-  * Find the latest version of [Terraform](https://www.terraform.io/downloads.html)
-    * You probably want the Linux 64-bit download
-```bash
-% cd /usr/local/bin
-% curl -s https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip | bsdtar xf - && chmod 0755 terraform
-```
+1. Install curl, git, groff, jq, pip3 (Python3), and unzip
+   * APT based
+   ```bash
+   % sudo apt-get update
+   % sudo apt-get install curl git groff jq python3-pip unzip
+   ```
+
+   * YUM based
+   ```bash
+   % sudo yum update
+   % sudo yum install curl git groff-base jq python3-pip unzip
+   ```
+
+   * Alpine
+   ```bash
+   % sudo apk update
+   % sudo apk add curl git groff jq python3 unzip
+   ```
+
+2. Install the AWS CLI
+   ```bash
+   % sudo pip3 install awscli
+   ```
+3. Install Terraform
+   * Find the latest version of [Terraform](https://www.terraform.io/downloads.html) (You most likely wil  want the Linux 64-bit download)
+   ```bash
+   % cd /usr/local/bin
+   % curl -so /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
+   % sudo unzip /tmp/terraform.zip
+   % rm /tmp/terraform.zip
+   ```
 
 ### Windows Setup
 
 I rarely use Windows, but here are some starting points
-* There are a variety of Git clients for Windows
-  * [Command line](https://git-scm.com/downloads)
-  * [GUI](https://git-scm.com/download/gui/windows)
+
+* [GUI](https://git-scm.com/download/gui/windows) or [CLI](https://git-scm.com/downloads) Git client
 * [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html)
 * [Terraform](https://www.terraform.io/downloads.html)
 * [jq](https://stedolan.github.io/jq/)
+
+<br/>
+
 
 # AWS Setup
 
@@ -99,5 +90,9 @@ You should create a Terraform [IAM User](https://docs.aws.amazon.com/IAM/latest/
 2. Attach the _AdministratorAccess_ policy to the user
 3. Create and download credentials for the user
 
+<br/>
+
 [<img src="http://img.youtube.com/vi/vhEH8_Man3U/maxresdefault.jpg" alt="Watch the Video" width="50%" />](https://youtu.be/vhEH8_Man3U)
 
+
+<br/>
