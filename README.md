@@ -99,5 +99,9 @@ You should create a Terraform [IAM User](https://docs.aws.amazon.com/IAM/latest/
 2. Attach the _AdministratorAccess_ policy to the user
 3. Create and download credentials for the user
 
-[<img src="https://img.youtube.com/vi/vhEH8_Man3U/maxresdefault.jpg" width="50%">](https://youtu.be/vhEH8_Man3U)
+[![Watch the video](https://img.youtube.com/vi/vhEH8_Man3U/maxresdefault.jpg)](https://youtu.be/vhEH8_Man3U)
 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=vhEH8_Man3U" target="_blank">
+ <img src="http://img.youtube.com/vi/vhEH8_Man3U/maxresdefault.jpg" alt="Watch the Video" width="50%" />
+</a>
